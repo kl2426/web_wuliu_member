@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>企业认证 - 实名认证 - 个人中心 - 用户中心 - 雨花区产业园信息数据共享平台</title>
+
+		<!-- Bootstrap -->
+		<link href="../../../js/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../../../js/lib/layui/css/layui.css" rel="stylesheet">
+		<link href="../../../fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="../../../js/lib/ztree_v3/css/zTreeStyle/zTreeStyle.css" type="text/css">
+		<link href="../../../css/common/main.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+
+	<body>
+		<!--   header  -->
+		@@include('../../common/header-member.html')
+		<!--   /header  -->
+
+		<!--  main  -->
+		<div class="m-member">
+			<div class="container">
+				<div class="member-body">
+					<div class="body-left">
+						<div class="member-menu">
+							<ul id="treeDemo" class="ztree"></ul>
+						</div>
+					</div>
+					<div class="body-right">
+						<div class="body-body">
+							<div class="m-member-top">
+								<div class="user-pic">
+									<a class="pic-img"><img src="../../../img/common/userface2.jpg" /></a>
+									<h4>王先生</h4>
+									<p>用户名资质申请</p>
+								</div>
+								<div class="user-desc">
+									<div class="desc-nav">
+										<a><span>个人信息</span></a>
+										<a class="active"><span>修改我的头像</span></a>
+									</div>
+									<ul class="desc-body">
+										<li>
+											<div class="one">
+												<p>发布仓储信息</p>
+												<h4>4</h4>
+											</div>
+										</li>
+										<li>
+											<div class="one">
+												<p>发布物流信息</p>
+												<h4>4</h4>
+											</div>
+										</li>
+										<li>
+											<div class="one">
+												<p>政务办理</p>
+												<h4>4</h4>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<!--  企业认证   -->
+							<div class="m-member-certification-enterprise">
+								<div class="m-enterprise-title"><span>企业认证</span></div>
+								<div class="enterprise-body">
+									<form class="layui-form layui-row" action="">
+										<div class="layui-col-xs6">
+											<div class="layui-form-item">
+												<label class="layui-form-label">企业名称</label>
+												<div class="layui-input-block">
+													<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入企业名称" class="layui-input">
+												</div>
+											</div>
+										</div>
+										<div class="layui-col-xs6">
+											<div class="layui-form-item">
+												<label class="layui-form-label">所属行业</label>
+												<div class="layui-input-block">
+													<select name="interest" lay-filter="aihao">
+														<option value=""></option>
+														<option value="0">写作</option>
+														<option value="1" selected="">阅读</option>
+														<option value="2">游戏</option>
+														<option value="3">音乐</option>
+														<option value="4">旅行</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="layui-col-xs6">
+											<div class="layui-form-item">
+												<label class="layui-form-label">企业执照号</label>
+												<div class="layui-input-block">
+													<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入企业执照号" class="layui-input">
+												</div>
+											</div>
+										</div>
+										<div class="layui-col-xs6">
+											<div class="layui-form-item">
+												<label class="layui-form-label">注册类型</label>
+												<div class="layui-input-block">
+													<select name="interest" lay-filter="aihao">
+														<option value=""></option>
+														<option value="0">写作</option>
+														<option value="1" selected="">阅读</option>
+														<option value="2">游戏</option>
+														<option value="3">音乐</option>
+														<option value="4">旅行</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="layui-col-xs6">
+											<div class="layui-form-item">
+												<label class="layui-form-label">法人</label>
+												<div class="layui-input-block">
+													<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入法人" class="layui-input">
+												</div>
+											</div>
+										</div>
+										<div class="layui-col-xs6">
+											<div class="layui-form-item">
+												<label class="layui-form-label">联系方式</label>
+												<div class="layui-input-block">
+													<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入联系方式" class="layui-input">
+												</div>
+											</div>
+										</div>
+										<div class="layui-col-xs6">
+											<div class="layui-form-item">
+												<label class="layui-form-label">身份证号</label>
+												<div class="layui-input-block">
+													<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入身份证号" class="layui-input">
+												</div>
+											</div>
+										</div>
+										<div class="layui-col-xs6">
+											<div class="layui-form-item">
+												<label class="layui-form-label">企业规模</label>
+												<div class="layui-input-block">
+													<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入企业规模" class="layui-input">
+												</div>
+											</div>
+										</div>
+										<div class="layui-col-xs12">
+											<div class="layui-form-item">
+												<label class="layui-form-label">企业地址</label>
+												<div class="layui-input-inline" style="width: 180px;">
+													<select name="quiz1">
+														<option value="">请选择省</option>
+														<option value="浙江" selected="">浙江省</option>
+														<option value="你的工号">江西省</option>
+														<option value="你最喜欢的老师">福建省</option>
+													</select>
+												</div>
+												<div class="layui-input-inline" style="width: 180px;">
+													<select name="quiz2">
+														<option value="">请选择市</option>
+														<option value="杭州">杭州</option>
+														<option value="宁波" disabled="">宁波</option>
+														<option value="温州">温州</option>
+														<option value="温州">台州</option>
+														<option value="温州">绍兴</option>
+													</select>
+												</div>
+												<div class="layui-input-inline" style="width: 180px; margin-right: 0;">
+													<select name="quiz3">
+														<option value="">请选择县/区</option>
+														<option value="西湖区">西湖区</option>
+														<option value="余杭区">余杭区</option>
+														<option value="拱墅区">临安市</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="layui-col-xs12">
+											<div class="layui-form-item">
+												<label class="layui-form-label">企业详细地址</label>
+												<div class="layui-input-block">
+													<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入企业详细地址" class="layui-input">
+												</div>
+											</div>
+										</div>
+										<div class="layui-col-xs6">
+											<div class="layui-form-item">
+												<label class="layui-form-label">企业邮编</label>
+												<div class="layui-input-block">
+													<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入企业邮编" class="layui-input">
+												</div>
+											</div>
+										</div>
+										<div class="layui-col-xs6">
+											<div class="layui-form-item">
+												<label class="layui-form-label">统一信用代码</label>
+												<div class="layui-input-block">
+													<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入统一信用代码" class="layui-input">
+												</div>
+											</div>
+										</div>
+										<div class="layui-col-xs6">
+											<div class="layui-form-item">
+												<label class="layui-form-label">占地面积</label>
+												<div class="layui-input-block">
+													<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入占地面积" class="layui-input">
+												</div>
+											</div>
+										</div>
+										<div class="layui-col-xs6">
+											<div class="layui-form-item">
+												<label class="layui-form-label">仓储数量</label>
+												<div class="layui-input-block">
+													<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入仓储数量" class="layui-input">
+												</div>
+											</div>
+										</div>
+										<div class="layui-col-xs6">
+											<div class="layui-form-item">
+												<label class="layui-form-label">企业LOGO</label>
+												<div class="layui-input-block">
+													<div class="layui-upload">
+														<button type="button" class="layui-btn layui-btn-mini" id="upfile_1">上传图片</button>
+														<div class="layui-upload-list">
+															<img class="layui-upload-img" id="upfile_dom_1">
+															<p id="demoText1"></p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="layui-col-xs6">
+											<div class="layui-form-item">
+												<label class="layui-form-label">营业执照</label>
+												<div class="layui-input-block">
+													<div class="layui-upload">
+														<button type="button" class="layui-btn layui-btn-mini" id="upfile_2">上传图片</button>
+														<div class="layui-upload-list">
+															<img class="layui-upload-img" id="upfile_dom_2">
+															<p id="demoText2"></p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="layui-col-xs12">
+											<div class="layui-form-item">
+												<label class="layui-form-label">&nbsp;</label>
+												<div class="layui-input-block">
+													<button class="layui-btn" lay-submit="" lay-filter="demo1">立即提交</button>
+												</div>
+											</div>
+										</div>
+
+									</form>
+								</div>
+							</div>
+							<!--  /企业认证   -->
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  /main  -->
+
+		<!-- footer  -->
+		@@include('../../common/footer.html')
+		<!-- /footer  -->
+
+		<script src="../../../js/common/jquery.js"></script>
+		<script src="../../../js/lib/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../../../js/lib/layui/layui.all.js"></script>
+		<script type="text/javascript" src="../../../js/lib/ztree_v3/js/jquery.ztree.core.js"></script>
+		<script src="../../../js/common/main.js"></script>
+		<script src="certification_enterprise.js"></script>
+		<script>
+		</script>
+	</body>
+
+</html>

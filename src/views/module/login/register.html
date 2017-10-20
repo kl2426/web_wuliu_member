@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>登录</title>
+
+		<!-- Bootstrap -->
+		<link href="../../../js/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../../../fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="../../../css/common/main.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+
+	<body style="background-color: #f3f3f3;">
+		
+		<!--   header  -->
+		@@include('../../common/header-member.html')
+		<!--   /header  -->
+		
+		<!--   main  -->
+		<div class="m-register-main">
+			<div class="container">
+				<div class="register-body">
+					<form id="form_register">
+						<h3>用户注册</h3>
+						<div class="register-one">
+							<input name="username" type="text" class="form-control" placeholder="输入手机号码" />
+							<div class="send-code"><input id="send_code" type="button" class="btn btn-link" value="发送验证码" /></div>
+						</div>
+						<div class="register-one">
+							<input name="code" type="text" class="form-control" placeholder="输入验证码" />
+						</div>
+						<div class="register-one">
+							<input name="password" type="password" class="form-control" placeholder="输入密码" />
+						</div>
+						<div class="register-one">
+							<input id="password2" type="password" class="form-control" placeholder="确认密码" />
+						</div>
+						<div id="register_msg" class="register-msg"></div>
+						<div class="register-btn">
+							<input type="submit" class="btn btn-info" value="立即注册" />
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--   /main  -->
+		
+		<!-- footer  -->
+		@@include('../../common/footer.html')
+		<!-- /footer  -->
+		
+		<script src="../../../js/common/jquery.js"></script>
+		<script src="../../../js/lib/bootstrap/js/bootstrap.min.js"></script>
+		<script src="login.js"></script>
+	</body>
+
+</html>

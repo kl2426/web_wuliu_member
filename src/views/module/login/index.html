@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>登录</title>
+
+		<!-- Bootstrap -->
+		<link href="../../../js/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../../../fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="../../../css/common/main.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+
+	<body style="background-color: #f3f3f3;">
+		
+		<!--   header  -->
+		@@include('../../common/header-member.html')
+		<!--   /header  -->
+		
+		<!--   main  -->
+		<div class="m-login-main">
+			<div class="container">
+				<div class="login-body">
+					<form id="form_login">
+						<h3>用户登录</h3>
+						<div class="input-one">
+							<span>账&nbsp;&nbsp;号</span>
+							<input name="username" type="text" class="form-control" placeholder="请输入您的账号" autocomplete="off" />
+						</div>
+						<div class="input-one">
+							<span>密&nbsp;&nbsp;码</span>
+							<input name="password" type="password" class="form-control" placeholder="请输入您的密码" />
+						</div>
+						<div class="input-code">
+							<input name="code" type="text" class="form-control" placeholder="验证码" autocomplete="off" />
+							<img id="code_img" src="../../../img/common/code.jpg" />
+						</div>
+						<div class="input-che">
+							<label><input name="remember" type="checkbox" />记住用户名</label>
+							<a href="#">忘记密码？</a>
+						</div>
+						<div class="login-msg" id="login_msg"></div>
+						<div class="input-btn">
+							<input type="submit" class="btn btn-info" value="登录" />
+						</div>
+						<div class="input-one">
+							<a href="#">我要注册</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--   /main  -->
+		
+		<!-- footer  -->
+		@@include('../../common/footer.html')
+		<!-- /footer  -->
+		
+		<script src="../../../js/common/jquery.js"></script>
+		<script src="../../../js/lib/bootstrap/js/bootstrap.min.js"></script>
+		<script src="login.js"></script>
+	</body>
+
+</html>

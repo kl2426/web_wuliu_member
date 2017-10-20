@@ -1,0 +1,16 @@
+{
+  "name": "logistics_wu",
+  "version": "1.2.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "308822989@qq.com",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-file-include": "^1.2.0"
+  }
+}

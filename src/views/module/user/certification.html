@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>实名认证 - 个人中心 - 用户中心 - 雨花区产业园信息数据共享平台</title>
+
+		<!-- Bootstrap -->
+		<link href="../../../js/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../../../js/lib/layui/css/layui.css" rel="stylesheet">
+		<link href="../../../fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="../../../js/lib/ztree_v3/css/zTreeStyle/zTreeStyle.css" type="text/css">
+		<link href="../../../css/common/main.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+
+	<body>
+		<!--   header  -->
+		@@include('../../common/header-member.html')
+		<!--   /header  -->
+
+		<!--  main  -->
+		<div class="m-member">
+			<div class="container">
+				<div class="member-body">
+					<div class="body-left">
+						<div class="member-menu">
+							<ul id="treeDemo" class="ztree"></ul>
+						</div>
+					</div>
+					<div class="body-right">
+						<div class="body-body">
+							<div class="m-member-top">
+								<div class="user-pic">
+									<a class="pic-img"><img src="../../../img/common/userface2.jpg" /></a>
+									<h4>王先生</h4>
+									<p>用户名资质申请</p>
+								</div>
+								<div class="user-desc">
+									<div class="desc-nav">
+										<a><span>个人信息</span></a>
+										<a class="active"><span>修改我的头像</span></a>
+									</div>
+									<ul class="desc-body">
+										<li>
+											<div class="one">
+												<p>发布仓储信息</p>
+												<h4>4</h4>
+											</div>
+										</li>
+										<li>
+											<div class="one">
+												<p>发布物流信息</p>
+												<h4>4</h4>
+											</div>
+										</li>
+										<li>
+											<div class="one">
+												<p>政务办理</p>
+												<h4>4</h4>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<!--  实名认证  -->
+							<div class="m-member-certification">
+								<div class="m-enterprise-title"><span>实名认证</span></div>
+								<div class="certification-body clearfix text-center">
+									<div class="col-xs-2"></div>
+									<div class="col-xs-4"><a href="certification_enterprise.html" class="btn btn-info btn-lg">企业认证</a></div>
+									<div class="col-xs-4"><a class="btn btn-info btn-lg">个人认证</a></div>
+								</div>
+							</div>
+							<!--  /实名认证  -->
+							
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  /main  -->
+
+		<!-- footer  -->
+		@@include('../../common/footer.html')
+		<!-- /footer  -->
+
+		<script src="../../../js/common/jquery.js"></script>
+		<script src="../../../js/lib/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../../../js/lib/layui/layui.all.js"></script>
+		<script type="text/javascript" src="../../../js/lib/ztree_v3/js/jquery.ztree.core.js"></script>
+		<script src="../../../js/common/main.js"></script>
+	</body>
+
+</html>

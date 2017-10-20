@@ -1,0 +1,115 @@
+{
+	"code": 0,
+	"msg": "",
+	"count": 1000,
+	"data": [
+		{
+			"id": 10000,
+			"title": "主题主字",
+			"type": "通用型",
+			"area": "5000m2",
+			"money": "￥1244",
+			"storehouse": "通用仓",
+			"username": "易容生",
+			"mobile": "13788889999",
+			"time": "2017-04-12",
+			"state": "未出租"
+		},
+		{
+			"id": 10000,
+			"title": "主题主字",
+			"type": "通用型",
+			"area": "5000m2",
+			"money": "￥1244",
+			"storehouse": "通用仓",
+			"username": "易容生",
+			"mobile": "13788889999",
+			"time": "2017-04-12",
+			"state": "未出租"
+		},
+		{
+			"id": 10000,
+			"title": "主题主字",
+			"type": "通用型",
+			"area": "5000m2",
+			"money": "￥1244",
+			"storehouse": "通用仓",
+			"username": "易容生",
+			"mobile": "13788889999",
+			"time": "2017-04-12",
+			"state": "未出租"
+		},
+		{
+			"id": 10000,
+			"title": "主题主字",
+			"type": "通用型",
+			"area": "5000m2",
+			"money": "￥1244",
+			"storehouse": "通用仓",
+			"username": "易容生",
+			"mobile": "13788889999",
+			"time": "2017-04-12",
+			"state": "未出租"
+		},
+		{
+			"id": 10000,
+			"title": "主题主字",
+			"type": "通用型",
+			"area": "5000m2",
+			"money": "￥1244",
+			"storehouse": "通用仓",
+			"username": "易容生",
+			"mobile": "13788889999",
+			"time": "2017-04-12",
+			"state": "未出租"
+		},
+		{
+			"id": 10000,
+			"title": "主题主字",
+			"type": "通用型",
+			"area": "5000m2",
+			"money": "￥1244",
+			"storehouse": "通用仓",
+			"username": "易容生",
+			"mobile": "13788889999",
+			"time": "2017-04-12",
+			"state": "未出租"
+		},
+		{
+			"id": 10000,
+			"title": "主题主字",
+			"type": "通用型",
+			"area": "5000m2",
+			"money": "￥1244",
+			"storehouse": "通用仓",
+			"username": "易容生",
+			"mobile": "13788889999",
+			"time": "2017-04-12",
+			"state": "未出租"
+		},
+		{
+			"id": 10000,
+			"title": "主题主字",
+			"type": "通用型",
+			"area": "5000m2",
+			"money": "￥1244",
+			"storehouse": "通用仓",
+			"username": "易容生",
+			"mobile": "13788889999",
+			"time": "2017-04-12",
+			"state": "未出租"
+		},
+		{
+			"id": 10000,
+			"title": "主题主字",
+			"type": "通用型",
+			"area": "5000m2",
+			"money": "￥1244",
+			"storehouse": "通用仓",
+			"username": "易容生",
+			"mobile": "13788889999",
+			"time": "2017-04-12",
+			"state": "未出租"
+		}
+	]
+}
