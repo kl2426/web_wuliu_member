@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>已发布出租 - 企业仓储 - 用户中心 - 雨花区产业园信息数据共享平台</title>
+
+		<!-- Bootstrap -->
+		<link href="../../../../js/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../../../../js/lib/layui/css/layui.css" rel="stylesheet">
+		<link href="../../../../fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="../../../../js/lib/ztree_v3/css/zTreeStyle/zTreeStyle.css" type="text/css">
+		<link href="../../../../css/common/main.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+
+	<body>
+		<!--   header  -->
+		@@include('../../../common/header-member.html')
+		<!--   /header  -->
+
+		<!--  main  -->
+		<div class="m-member">
+			<div class="container">
+				<div class="member-body">
+					<div class="body-left">
+						<div class="member-menu">
+							<ul id="treeDemo" class="ztree"></ul>
+						</div>
+					</div>
+					<div class="body-right">
+						<div class="body-body">
+							<div class="m-member-top">
+								<div class="user-pic">
+									<a class="pic-img"><img src="../../../../img/common/userface2.jpg" /></a>
+									<h4>王先生</h4>
+									<p>用户名资质申请</p>
+								</div>
+								<div class="user-desc">
+									<div class="desc-nav">
+										<a><span>个人信息</span></a>
+										<a class="active"><span>修改我的头像</span></a>
+									</div>
+									<ul class="desc-body">
+										<li>
+											<div class="one">
+												<p>发布仓储信息</p>
+												<h4>4</h4>
+											</div>
+										</li>
+										<li>
+											<div class="one">
+												<p>发布物流信息</p>
+												<h4>4</h4>
+											</div>
+										</li>
+										<li>
+											<div class="one">
+												<p>政务办理</p>
+												<h4>4</h4>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!--   求租列表    -->
+							<div class="m-member-seek-list">
+								<div class="m-enterprise-title"><span>已发布出租</span></div>
+								<div class="list-body">
+									<form class="list-operate layui-form clearfix">
+										<div class="col-xs-6 text-left">
+											<span>查看：</span>
+											<input type="checkbox" name="like1[read]" lay-skin="primary" title="已发布">
+											<input type="checkbox" name="like1[read]" lay-skin="primary" title="待付款">
+											<input type="checkbox" name="like1[read]" lay-skin="primary" title="已付款">
+											<input type="checkbox" name="like1[read]" lay-skin="primary" title="已完成">
+										</div>
+									</form>
+									
+									<table class="layui-table" lay-data="{ url:'../../../../json/demo.json',skin:'nob',even:true, page:true, id:'idTest'}" lay-filter="demo">
+										<thead>
+											<tr>
+												<th lay-data="{field:'title', width:80}">仓储名称</th>
+												<th lay-data="{field:'type', width:80}">所属公司</th>
+												<th lay-data="{field:'area', width:90, sort: true}">仓储面积</th>
+												<th lay-data="{field:'money', width:90, sort: true}">仓储类型</th>
+												<th lay-data="{field:'storehouse', width:90, sort: true}">仓位数</th>
+												<th lay-data="{field:'username',width:100, sort: true}">出租时间</th>
+												<th lay-data="{field:'mobile', width:90, sort: true}">出租价格</th>
+												<th lay-data="{fixed: 'right', width:140, align:'center', toolbar: '#barDemo'}">操作</th>
+											</tr>
+										</thead>
+									</table>
+									
+									<script type="text/html" id="barDemo">
+									  <a class="layui-btn layui-btn-mini" lay-event="audit">审核</a>
+									  <a class="layui-btn layui-btn-mini" lay-event="pay">付款</a>
+									  <a class="layui-btn layui-btn-danger layui-btn-mini" lay-event="del">删除</a>
+									</script>
+								</div>
+								
+							</div>
+							<!--   /求租列表    -->
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  /main  -->
+		
+		<!-- footer  -->
+		@@include('../../../common/footer.html')
+		<!-- /footer  -->
+		
+		<script src="../../../../js/common/jquery.js"></script>
+		<script src="../../../../js/lib/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../../../../js/lib/layui/layui.all.js"></script>
+		<script type="text/javascript" src="../../../../js/lib/ztree_v3/js/jquery.ztree.core.js"></script>
+		<script src="../../../../js/common/main.js"></script>
+		<script src="rent_list.js"></script>
+	</body>
+
+</html>
